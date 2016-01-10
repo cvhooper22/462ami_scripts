@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ..
-sudo yum install -y httpd24 php56 mysql55-server php56-mysqlnd
+yum install -y httpd24 php56 mysql55-server php56-mysqlnd
 service httpd start
 chkconfig httpd on
 groupadd www
