@@ -9,6 +9,7 @@ ruby rubygems-2.5.1/setup.rb
 yum install ruby-devel -y
 yum install ruby-irb -y
 gem install bundler
+gem install io-console
 git clone https://github.com/cvhooper22/462_lab0.git
 cd 462_lab0
 bundle install
