@@ -10,7 +10,7 @@ cd $HOME
 wget https://rubygems.org/rubygems/rubygems-2.5.1.tgz
 tar -xzf rubygems-2.5.1.tgz
 cd rubygems-2.5.1
-sudo ruby setup.rb
+ruby setup.rb
 cd ..
 gem install bundler
 gem install io-console
