@@ -1,5 +1,4 @@
 #!/bin/bash
-cd ..
 yum install -y httpd24 php56 mysql55-server php56-mysqlnd
 service httpd start
 chkconfig httpd on
