@@ -9,3 +9,5 @@ chmod 2775 /var/www
 find /var/www -type d -exec chmod 2775 {} +
 find /var/www -type f -exec chmod 0664 {} +
 cp 462ami_scripts/index.html /var/www/html
+cp 462ami_scripts/fancy_pig.gif /var/www/html
+cp 462ami_scripts/fancy_pig_approved.png /var/www/html
