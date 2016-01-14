@@ -1,98 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
-		<title>freema22 Base</title>
+		<title>Freeman Lab 0</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<style type="text/css">
 			/*<![CDATA[*/
 			body {
-				background-color: #fff;
-				color: #000;
-				font-size: 0.9em;
-				font-family: sans-serif,helvetica;
-				margin: 0;
-				padding: 0;
+				background-color: #696354;
 			}
-			:link {
-				color: #c00;
-			}
-			:visited {
-				color: #c00;
-			}
-			a:hover {
-				color: #f50;
-			}
-			h1 {
+
+			header {
+				background-color: #8a8675;
+				border-radius: 2px;
 				text-align: center;
-				margin: 0;
-				padding: 0.6em 2em 0.4em;
-				background-color: #22437f;
-				color: #fff;
-				font-weight: normal;
-				font-size: 1.75em;
-				border-bottom: 2px solid #000;
 			}
-			h1 strong {
-				font-weight: bold;
+
+			.content-header {
+				margin-left: auto;
+				margin-right: auto;
+				color: #d2cdac;
 			}
-			h2 {
-				font-size: 1.1em;
-				font-weight: bold;
+			.content-label {
+				font-size: 24px;
+				text-decoration: underline;
 			}
-			hr {
-				display: none;
+
+			.content-tile {
+				min-height: 200px;
+				width: 45%;
+				border: 3px solid #8a8675;
+				border-radius: 5px;
+				margin: 5px;
+				padding: 5px;
+				text-align: center;
 			}
-			.content {
-				padding: 1em 5em;
-			}
-			.content-columns {
-				/* Setting relative positioning allows for 
-				absolute positioning for sub-classes */
-				position: relative;
-				padding-top: 1em;
-			}
-			.content-column-left {
-				/* Value for IE/Win; will be overwritten for other browsers */
-				width: 47%;
-				padding-right: 3%;
+
+			.left {
 				float: left;
-				padding-bottom: 2em;
 			}
-			.content-column-left hr {
-				display: none;
+
+			.right {
+				float: right;
 			}
-			.content-column-right {
-				/* Values for IE/Win; will be overwritten for other browsers */
-				width: 47%;
-				padding-left: 3%;
-				float: left;
-				padding-bottom: 2em;
+
+			pre {
+				color: black;
+				text-align: left;
+				margin: 0 5px;
+				background-color: #d3d3d3;
+				padding: 5px;
+				border-radius: 5px;
 			}
-			.content-columns>.content-column-left, .content-columns>.content-column-right {
-				/* Non-IE/Win */
+
+			footer {
+				margin-left: auto;
+				margin-right: auto;
+				display: table;
 			}
-			img {
-				border: 2px solid #fff;
-				padding: 2px;
-				margin: 2px;
+			footer img{
+				height: 150px;
 			}
-			a:hover img {
-				border: 2px solid #f50;
+			.footer-logo {
+				height: 55px;
+				vertical-align: 40px;
 			}
 			/*]]>*/
 		</style>
 	</head>
-
+	<header>
+		<h1>Matthew Freeman (freema22)<br>Lab 0 server</h1>
+	</header>
 	<body>
-		<h1>Matt Freeman's AMI <strong>freema22</strong></h1>
-
-		<div class="content">
-			<div class="content-middle">
-				<p>What up yo, this is my Amazon instance, the AMI id is: ami-e3baa282</p>
+		<div class="content-tile left">
+			<div class = "content-header">
+				<span class="content-label">My AMI ID is:</span> 
+				<p>ami-e3baa282</p>
 			</div>
-			<hr />
+		</div>
+		<div class="content-tile right">
+			<div class="content-header">
+				<span class="content-label">User Script:</span>
+				<p>
+					<pre>#!/bin/bash<br>yum update -y
+					</pre>
+				</p>
 			</div>
 		</div>
 	</body>
+	<footer>
+		<img src="fancy_pig.gif") />
+		<img src="fancy_pig_approved.png" class="footer-logo" />
+	</footer>
 </html>
