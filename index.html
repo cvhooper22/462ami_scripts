@@ -81,7 +81,30 @@
 			<div class="content-header">
 				<span class="content-label">User Script:</span>
 				<p>
-					<pre>#!/bin/bash<br>yum update -y
+					<pre>
+					#!/bin/bash<br>
+					yum update -y<br>
+					yum install -y git<br>
+					git clone https://github.com/cvhooper22/462ami_scripts.git<br>
+					sh 462ami_scripts/lamp.sh<br>
+					</pre>
+					<p>
+					The <pre>lamp.sh</pre> script runs the following:<br>
+					</p>
+					<pre>
+					#!/bin/bash<br>
+					yum install -y httpd24 php56 mysql55-server php56-mysqlnd<br>
+					service httpd start<br>
+					chkconfig httpd on<br>
+					groupadd www<br>
+					usermod -a -G www ec2-user<br>
+					chown -R root:www /var/www<br>
+					chmod 2775 /var/www<br>
+					find /var/www -type d -exec chmod 2775 {} +<br>
+					find /var/www -type f -exec chmod 0664 {} +<br>
+					cp 462ami_scripts/index.html /var/www/html<br>
+					cp 462ami_scripts/fancy_pig.gif /var/www/html<br>
+					cp 462ami_scripts/fancy_pig_approved.png /var/www/html<br>
 					</pre>
 				</p>
 			</div>
